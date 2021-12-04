@@ -27,18 +27,42 @@
 <body>
 
     <header>
-
-        <a href="index.html"><img src="images/nav-logo.png" title="Home" alt="Mermaids & Tadpoles Logo"></a>
-
-        <nav>
-            <a>
-                <a href="index.html" title="Home"><li>Home</li></a>
-                <a href="index.html" title="Home"><li>Services</li></a>
-                <a href="about.html"><li>About</li></a>
+        
+        <nav class="navbar" id="navigationBar">
+            <ul>
+                <a href="index.html"><img src="images/nav-logo.png" title="Home" alt="Mermaids & Tadpoles Logo" id="logo"></a>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Services">Services</a></li>
+                <li><a href="about.html" title="About">About</a></li>
             </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="NavBar()"><i class="fa fa-bars"></i></a>
+
         </nav>
 
     </header>
+
+    <footer>
+
+        <h2>Contact Me</h2>
+            <p>Candace Hurman</p>
+
+            <div class="footer-callout">
+                <a href="mailto:mermaid-tadpole@mail.com"><i class="far fa-envelope"></i></a>
+                <a href="mailto:mermaid-tadpole@mail.com"><p>Email Me</p></a>
+            </div>
+
+            <div class="footer-callout">
+                <a href="https://www.facebook.com/mermaidsntadpoles/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/mermaidsntadpoles/"><p>Message me on Facebook</p></a>
+            </div>
+
+            <div class="footer-callout">
+                <a href="https://calendly.com/p3mermaidstadpoles/30min?month=2021-12"><i class="far fa-calendar"></i></a>
+                <a href="https://calendly.com/p3mermaidstadpoles/30min?month=2021-12"><p>Schedule a Lesson</p></a>   
+            </div>
+
+    </footer>
    
     <!-- JS -->
     <script type="text/javascript" src="javascript/javascript.js"></script>

@@ -28,46 +28,60 @@
 
     <header>
 
-        <a href="index.html"><img src="images/nav-logo.png" title="Home" alt="Mermaids & Tadpoles Logo"></a>
-
-        <nav>
-            <a>
-                <a href="index.html" title="Home"><li>Home</li></a>
-                <a href="index.html" title="Home"><li>Services</li></a>
-                <a href="about.html"><li>About</li></a>
+        <nav class="navbar" id="navigationBar">
+            <ul>
+                <a href="index.html"><img src="images/nav-logo.png" title="Home" alt="Mermaids & Tadpoles Logo" id="logo"></a>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="index.html" title="Services">Services</a></li>
+                <li><a href="about.html" title="About">About</a></li>
             </ul>
+
+            <a href="javascript:void(0);" class="icon" onclick="NavBar()"><i class="fa fa-bars"></i></a>
+
         </nav>
 
     </header>
 
     <section>
 
-        <img src="images/header-home.jpg" title="Ocean" alt="Image of an ocean shore">
+        <div class="header-home">
+            <img src="images/header-home.jpg" title="Ocean" alt="Image of an ocean shore" class="header-image">
 
-        <h1>I don't come from the sea, but I live in the water</h1>
-
-    </section>
-
-    <section>
-
-        <h2>What We Offer</h2>
-
-        <img src="images/private_service.jpeg" title="Private 1:1 Lesson" alt="Image of lady teaching a kid how to swim">
-        <p>Private 1:1 Lesson</p>
-
-        <img src="images/family_service.jpg" title="Family Swim Lessons" alt="Image of a mom holding a kid">
-        <p>Family Swim Lessons</p>
-
-        <img src="images/competitive_service.jpg" title="Private 1:1 Competitive Technique Lessons" alt="Image of kid getting into the pool with floaties">
-        <p>Private 1:1 Competitive Technique Lessons</p>
+            <h1 class="header-text">I don't come from the sea, but I live in the water</h1>
+        </div>
 
     </section>
 
-     <section>
+    <div class="container">
+        <section class="wwo">
+
+            <h2>What We Offer</h2>
+
+            <div class="wwo-service">
+                <div class="wwo-service-list">
+                    <img src="images/private_service.jpeg" title="Private 1:1 Lesson" alt="Image of lady teaching a kid how to swim" class="wwo-image">
+                    <p>Private 1:1 Lesson</p>
+                </div>
+
+                <div class="wwo-service-list">
+                    <img src="images/family_service.jpg" title="Family Swim Lessons" alt="Image of a mom holding a kid" class="wwo-image">
+                    <p>Family Swim Lessons</p>
+                </div>
+
+                <div class="wwo-service-list">
+                    <img src="images/competitive_service.jpg" title="Private 1:1 Competitive Technique Lessons" alt="Image of kid getting into the pool with floaties" class="wwo-image">
+                    <p>Private 1:1 Competitive Technique Lessons</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+     <section class="candace">
 
         <h2>Candace Hurman</h2>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo tenetur, quidem voluptate reprehenderit consectetur dolores modi eos. Officia voluptatibus iure soluta iusto ipsa minus et eaque, nostrum in aperiam.</p>
+        <p>Candace has over 30 years of swimming experience ranging from an All-American swimmer, age group coach, lifeguard and swim lessons instructor which has taught me to tailor each lesson to meet the child where they are and go at their pace.</p>
 
         <a href="about.html" alt="Learn More" class="btn">Learn More</a>
 
@@ -80,19 +94,19 @@
         <h2>Contact Me</h2>
             <p>Candace Hurman</p>
 
-            <div>
-                <i class="far fa-envelope"></i>
-                <p>Email Me</p>
+            <div class="footer-callout">
+                <a href="mailto:mermaid-tadpole@mail.com"><i class="far fa-envelope"></i></a>
+                <a href="mailto:mermaid-tadpole@mail.com"><p>Email Me</p></a>
             </div>
 
-            <div>
-                <i class="fab fa-facebook-f"></i>
-                <p>Message me on Facebook</p>
+            <div class="footer-callout">
+                <a href="https://www.facebook.com/mermaidsntadpoles/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/mermaidsntadpoles/"><p>Message me on Facebook</p></a>
             </div>
 
-            <div>
-                <i class="far fa-calendar"></i>
-                <p>Schedule a Lesson</p>    
+            <div class="footer-callout">
+                <a href="https://calendly.com/p3mermaidstadpoles/30min?month=2021-12"><i class="far fa-calendar"></i></a>
+                <a href="https://calendly.com/p3mermaidstadpoles/30min?month=2021-12"><p>Schedule a Lesson</p></a>   
             </div>
 
     </footer>

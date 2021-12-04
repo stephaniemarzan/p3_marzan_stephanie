@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font: 3em "Philosopher", sans-serif;
+}
+
+h2{
+    font: 2.5em "Dosis", sans-serif;
+    font-weight: 400;
+}
+
+.btn,
+p{
+    font: 1em "Dosis", sans-serif;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: #99986e;
+    display: block;
+    margin: 0 auto;
+    padding: 1% 3%;
+    margin-top: 4%;
+}
+
+footer{
+    background-color: #996e8d;
+    padding-left: 8%;
+}
+
+footer p{
+    display: inline-block;
+    padding-bottom: 2%;
+}
+
+footer h2 {
+    padding:4% 0 2%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/*--------
+
+Navigation Bar
+
+-----------*/
+
+.navbar ul li {
+    font: 1.2em "Philosopher", sans-serif;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+
+.navbar{
+    overflow: hidden;
+    padding: 2%;
+}
+
+.navbar li a {
+    display: none;
+    float:left;
+    color: #996e8d;
+    text-decoration: none;
+}
+
+.navbar a.icon {
+  float: right;
+  position: relative;
+  top: -10vw;
+  color:#996e8d;
+}
+
+.navbar.responsive {
+  position: relative;
+}
+
+.navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    padding: 2%;
+    text-align: center;
+
+  }
+
+  #logo{
+    max-width: 100px;
+  }
+
+  header nav a:hover {
+    color:#99986e;
+  }
+  
+
+  /*--------
+
+    Home Page
+
+  ---------*/
+
+  /*header*/
+
+
+.header-image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-home{
+    position: relative;
+    text-align: center;
+}
+
+/* what we offer */
+
+.wwo-image{
+    border-radius: 50%;
+    max-width: 250px;
+    height: 250px;
+    object-fit:cover;
+    display:block;
+    margin: 0 auto;
+}
+
+.wwo-service p{
+    text-align: center;
+    padding: 8% 0;
+}
+
+.wwo h2,
+.candace h2{
+    text-align: center;
+    padding: 5% 0;
+    text-transform: uppercase;
+}
+
+.wwo-service{
+    display: flex;
+    flex-direction: column;
+}
+
+.wwo-service-list{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.candace{
+    display:flex;
+    flex-direction: column;
+    background-color: #bcdfe6;
+}
+
+.candace img,
+.candace p{
+    width:80%;
+    margin: 0 auto;
+}
+
+.candace img{
+    filter: grayscale(70%);
+    border: 5px solid #99986e;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+  @media all and (min-width: 992px) {
+
+    /* navigation bar */
+
+    nav ul li a{
+    padding:0;
+    }
+  
+    #logo,
+    nav ul {
+    flex-direction: row;
+    }
+  
+    #logo{
+      display: inline-block;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+  
+    nav ul{
+      display: flex;
+      align-items: center;
+      margin: 0;
+    }
+  
+    nav ul li {
+      line-height: 1;
+      flex:auto;
+      font: 1.2em "Architects Daughter", cursive;
+      text-transform: uppercase;
+      list-style-type: none;
+    }
+  
+    .navbar{
+      padding: 0 100px;
+    }
+  
+    .navbar .icon {
+      display: none;
+    }
+  
+    .navbar li a {
+        display: block;
+        float:left;
+        padding: 20px 60px;
+    }
+
+    .wwo-service{
+    display: flex;
+    flex-direction: row;
+    }
+
+    .wwo-service div:not(:last-child){
+        padding-right: 5%;
+    }
+
+  }
+  
