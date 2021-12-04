@@ -199,6 +199,40 @@ Navigation Bar
     margin-bottom: 20%;
 }
 
+  /*--------
+
+    About Page
+
+  ---------*/
+
+/* header about */
+
+.header-about img{
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    opacity: 0.9;
+}
+
+.header-about h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.candace-quote h2{
+    text-align: center;
+    color: white;
+    padding: 10% 0;
+}
+
+.candace-quote{
+    background-color: #99986e;
+}
+
+.about-info{
+    padding: 5% 10%;
+}
+
 /*--------------------------------
 
 Media Queries
