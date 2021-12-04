@@ -44,10 +44,12 @@ footer{
 footer p{
     display: inline-block;
     padding-bottom: 2%;
+    color: white;
 }
 
 footer h2 {
     padding:4% 0 2%;
+    color: white;
 }
 
 footer a{
@@ -179,20 +181,29 @@ Navigation Bar
     display:flex;
     flex-direction: column;
     background-color: #bcdfe6;
+    margin-top: 10%;
 }
 
-.candace img,
-.candace p{
-    width:80%;
-    margin: 0 auto;
-}
 
 .candace img{
     filter: grayscale(70%);
     border: 5px solid #99986e;
     margin-top: 5%;
     margin-bottom: 5%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
 }
+
+.candace .btn{
+    margin-bottom: 20%;
+}
+
+/*--------------------------------
+
+Media Queries
+
+--------------------------------*/
 
   @media all and (min-width: 992px) {
 
@@ -241,6 +252,14 @@ Navigation Bar
         padding: 20px 60px;
     }
 
+    /*-----------
+
+    Home Page MQ
+
+    ----------*/
+
+    /* services home */
+
     .wwo-service{
     display: flex;
     flex-direction: row;
@@ -250,5 +269,29 @@ Navigation Bar
         padding-right: 5%;
     }
 
-  }
+    /* candace home */
+
+    .candace img{
+        float: left;
+        width: 30%;
+        margin: 5%;
+        display: block;
+    }
+    
+    .candace{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .candace h2{
+        text-align: left;
+    }
+
+    .candace .btn{
+        display: inline-block;
+    }
+
+}
   
