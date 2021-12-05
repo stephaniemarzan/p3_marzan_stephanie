@@ -189,7 +189,7 @@ Navigation Bar
 }
 
 
-.candace img{
+.candaceimg{
     filter: grayscale(70%);
     border: 5px solid #99986e;
     margin-top: 10%;
@@ -222,7 +222,7 @@ Navigation Bar
 
 .about-info h1{
     text-align: center;
-    padding: 2%;
+    padding: 2% 0 5%;
 }
 
 /* About info */
@@ -241,6 +241,11 @@ Navigation Bar
     padding: 5% 10%;
 }
 
+.candace p,
+.about-info p{
+    padding: 0 0 2%;
+}
+
 
  /*--------
 
@@ -252,6 +257,10 @@ Navigation Bar
 .services-cta h2{
     padding-top: 8%;
     text-align: center;
+}
+
+.services-info h1{
+    padding-bottom: 6%;
 }
 
 .service dd,
@@ -299,13 +308,23 @@ Navigation Bar
 .bold{
     font-weight: 600;
 }
+
+.service-section:nth-child(even){
+    background-color: #bcdfe6;
+}
+
+.service dd:last-child{
+    padding-bottom: 10%;
+}
+
+
 /*--------------------------------
 
 Media Queries
 
 --------------------------------*/
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 768px) {
 
     /* navigation bar */
 
@@ -352,23 +371,11 @@ Media Queries
         padding: 20px 60px;
     }
 
-    /*-----------
+      /*-----------
 
     Home Page MQ
 
     ----------*/
-
-    /* services home + services page*/
-
-    .wwo-service,
-    .service-types{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .wwo-service div:not(:last-child){
-        padding-right: 5%;
-    }
 
     /* candace home */
 
@@ -400,6 +407,11 @@ Media Queries
 
     ----------*/
 
+    .service-types{
+        display: flex;
+        flex-direction: row;
+    }
+
     .service-types img{
         margin: 0 0 5% 0;
     }
@@ -420,12 +432,7 @@ Media Queries
         max-width: 100%;
     }
 
-    .service-types:nth-child(3){
-        flex-direction: row-reverse;
-    }
-
     .service-section:nth-child(even){
-        background-color: #bcdfe6;
         margin-top: 5%;
 
     }
@@ -433,3 +440,24 @@ Media Queries
 
 }
   
+
+@media all and (min-width: 992px) {
+
+     /*-----------
+
+    Home Page MQ
+
+    ----------*/
+
+    /* services home + services page*/
+
+    .wwo-service{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wwo-service div:not(:last-child){
+        padding-right: 5%;
+    }
+
+}
