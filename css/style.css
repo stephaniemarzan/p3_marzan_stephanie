@@ -34,6 +34,7 @@ p{
     margin: 0 auto;
     padding: 1% 3%;
     margin-top: 4%;
+    max-width: 30%;
 }
 
 footer{
@@ -143,9 +144,10 @@ Navigation Bar
     text-align: center;
 }
 
-/* what we offer */
+/* what we offer + some of services page*/
 
-.wwo-image{
+.wwo-image,
+.service-img{
     border-radius: 50%;
     max-width: 250px;
     height: 250px;
@@ -166,12 +168,14 @@ Navigation Bar
     text-transform: uppercase;
 }
 
-.wwo-service{
+.wwo-service,
+.service-types{
     display: flex;
     flex-direction: column;
 }
 
-.wwo-service-list{
+.wwo-service-list,
+.service{
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -188,10 +192,11 @@ Navigation Bar
 .candace img{
     filter: grayscale(70%);
     border: 5px solid #99986e;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     max-width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
@@ -207,7 +212,8 @@ Navigation Bar
 
 /* header about */
 
-.header-about img{
+.header-about img,
+.header-services img{
     width: 100%;
     height: 500px;
     object-fit:cover;
@@ -218,6 +224,8 @@ Navigation Bar
     text-align: center;
     padding: 2%;
 }
+
+/* About info */
 
 .candace-quote h2{
     text-align: center;
@@ -233,6 +241,64 @@ Navigation Bar
     padding: 5% 10%;
 }
 
+
+ /*--------
+
+    Services Page
+
+  ---------*/
+
+.services-info h1,
+.services-cta h2{
+    padding-top: 8%;
+    text-align: center;
+}
+
+.service dd,
+.service dt{
+    max-width: 50%;
+    margin: 0 auto;
+    font-family:"Dosis", sans-serif;
+}
+
+.service dd{
+    text-align: left;
+}
+
+.service dt{
+    text-align: center;
+}
+
+.service dd{
+    font-size: 1em;
+    padding-bottom: 2%;
+}
+
+.service dt{
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom: 3%;
+}
+
+.service-img{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border: solid 5px #e6c8dd;
+}
+
+.services-cta p{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 15%;
+}
+
+.services-cta{
+    background-color: #e6c8dd;
+}
+
+.bold{
+    font-weight: 600;
+}
 /*--------------------------------
 
 Media Queries
@@ -292,11 +358,12 @@ Media Queries
 
     ----------*/
 
-    /* services home */
+    /* services home + services page*/
 
-    .wwo-service{
-    display: flex;
-    flex-direction: row;
+    .wwo-service,
+    .service-types{
+        display: flex;
+        flex-direction: row;
     }
 
     .wwo-service div:not(:last-child){
@@ -326,6 +393,43 @@ Media Queries
     .candace .btn{
         display: inline-block;
     }
+
+    /*-----------
+
+   Services MQ
+
+    ----------*/
+
+    .service-types img{
+        margin: 0 0 5% 0;
+    }
+
+    .service-types dt,
+    .service-types dd{
+        margin:0;
+        padding-left: 5%;
+    }
+
+    .service-types{
+        padding-top: 8%;
+        margin: 0 auto;
+    }
+
+    .service dd,
+    .service dt{
+        max-width: 100%;
+    }
+
+    .service-types:nth-child(3){
+        flex-direction: row-reverse;
+    }
+
+    .service-section:nth-child(even){
+        background-color: #bcdfe6;
+        margin-top: 5%;
+
+    }
+
 
 }
   
